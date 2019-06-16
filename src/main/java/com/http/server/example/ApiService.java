@@ -37,20 +37,23 @@ class ApiService {
         JsonObjectBuilder lectureContent = Json.createObjectBuilder();
         switch (id) {
             case 1:
-                lectureContent.add("lecturerName", "Genadi Ivanov")
+                lectureContent.add("id", "1")
+                        .add("lecturerName", "Genadi Ivanov")
                         .add("lectureTopic", "HTTPClient API in Java 11 - HTTP/2 and Reactive Stream")
                         .add("content", "Blocking vs Non-Blocking I/O operations. " +
                                 "How HTTPClient API in Java 11 leverages Reactive Streams. " +
                                 "HTTP/2 - Multiplexing and Server Pushes.");
                 break;
             case 2:
-                lectureContent.add("lecturerName", "Ivan Spasimirov")
+                lectureContent.add("id", "2")
+                        .add("lecturerName", "Ivan Spasimirov")
                         .add("lectureTopic", "Building an Application with Spring Boot")
                         .add("content", "Learn what you can do with Spring Boot. " +
                                 "Spring Boot offers a fast way to build applications.");
                 break;
             case 3:
-                lectureContent.add("lecturerName", "Radoslav Radulov")
+                lectureContent.add("id", "3")
+                        .add("lecturerName", "Radoslav Radulov")
                         .add("lectureTopic", "Java threads and the power of sleep() method")
                         .add("content", "sleep() causes the thread to definitely stop executing " +
                                 "for a given amount of time; if no other thread or process needs to be run, the CPU will be idle");
